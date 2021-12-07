@@ -1,0 +1,440 @@
+body{
+    margin: 60px;
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+}
+
+@font-face {
+    font-family:FK Raster Grotesk Trial;
+    src: url(FKRasterGroteskTrial-Blended.otf);
+  }
+
+  @font-face {
+    font-family:Volume Type;
+    src: url(VolumeType.ttf);
+  }
+
+.column{
+    font-family:FK Raster Grotesk Trial;
+    font-size: 86pt;
+    color: white;
+    line-height: 106.5%;
+    background-color: rgb(18, 9, 45);
+}
+
+.bookimage{
+  height: 200px;
+  width: 168px;
+  position: fixed;
+  top: 15vh;
+  left: 35vh;
+  display: none;
+}
+
+.bookimage img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+ 
+}
+
+.columnlight{
+  font-family:FK Raster Grotesk Trial;
+  font-size: 86pt;
+  color: rgb(18, 9, 45);
+  line-height: 106.5%;
+}
+
+.sectionhead{
+    font-family:FK Raster Grotesk Trial;
+    font-size: 48pt;
+    color: white;
+    line-height: 106.5%;
+    z-index: 2;
+}
+
+.sectionheadlight{
+  font-family:FK Raster Grotesk Trial;
+  font-size: 48pt;
+  color: rgb(18, 9, 45);
+  line-height: 106.5%;
+  z-index: 2;
+}
+
+.body{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16pt;
+    color: white;
+    line-height: 200%;
+    text-align: left;
+    word-spacing: 0px;
+    z-index: 2;
+}
+
+.body2{
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12pt;
+  color: white;
+  line-height: 200%;
+  text-align: center;
+  word-spacing: 0px;
+  z-index: 2;
+  margin-top: -30px;
+}
+
+.bodylight{
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16pt;
+  color: black;
+  line-height: 200%;
+  text-align: left;
+  word-spacing: 0px;
+  z-index: 2;
+}
+
+.sectioncontainer{
+    display: flex;
+    width: 100%;
+    height: 200vh;
+    flex-direction: column;
+}
+
+.sectioninnercontainer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 2;
+    
+
+}
+
+.sectioninnercolumns{
+    width: 48%;
+    min-height: 100%;
+}
+
+.byline{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16pt;
+    color: white;
+    line-height: 200%;
+    background-color: rgb(18, 9, 45);
+}
+
+.bylinelight{
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16pt;
+  color: rgb(18, 9, 45);
+  line-height: 200%;
+}
+
+
+
+.charactercontainer{
+    font-family: Volume Type;
+    color: white;
+    font-size: 200pt;
+    display: flex;
+    position: sticky;
+    flex-direction: column;
+    position: -webkit-sticky;
+    height: 40vh;
+    width: 100%;
+    justify-content: center;
+    top: 30vh;
+    z-index: 0;
+    text-align: center;
+    max-width: 100%;
+}
+
+.charactercontainerlight{
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  position: -webkit-sticky;
+  height: 40vh;
+  width: 100%;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  top: 30vh;
+  z-index: 0;
+}
+
+.character{
+    font-family: Volume Type;
+    font-variation-settings: 'ROTA' 0;
+    color: #2D42FF;
+    font-size: 150pt;
+    text-align: center;
+    padding: 70px 0;
+    line-height: 300pt;
+}
+
+.characterlight{
+  font-family: Volume Type;
+  font-variation-settings: 'ROTA' 0;
+  color:  rgb(18, 9, 45);
+  font-size: 150pt;
+  text-align: center;
+  line-height: 300pt;
+}
+
+.space{
+    background-color: rgb(18, 9, 45);
+    height: 2000px;
+    width: 100%;
+}
+
+.halfspace{
+  background-color: rgb(18, 9, 45);
+  height: 500px;
+  width: 100%;
+}
+
+.spacelight{
+  height: 2000px;
+  width: 100%;
+}
+
+@keyframes character-animation {
+    from {
+      font-variation-settings: "ROTA" 0;
+
+    }
+    to {
+      font-variation-settings: "ROTA" 500;
+     
+    }
+  }
+  
+  .characteranimator {
+    font-family: "Volume Type";
+    transition: font-variation-settings 0.3s ease;
+    animation-name: character-animation;
+    animation-duration: 2.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    color: #2D42FF;
+    font-size: 150pt;
+    text-align: center;
+    line-height: 300pt;
+    z-index: 0;
+  }
+
+  .specimencharacteranimator {
+    font-family: "Volume Type";
+    transition: font-variation-settings 0.3s ease;
+    animation-name: character-animation;
+    animation-duration: 2.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    color: #2D42FF;
+    font-size: 100pt;
+    text-align: center;
+    line-height: 200pt;
+    z-index: 0;
+  }
+  
+
+  .characteranimatorlight {
+    font-family: "Volume Type";
+    transition: font-variation-settings 0.3s ease;
+    animation-name: character-animation;
+    animation-duration: 2.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    color: rgb(18, 9, 45);
+    font-size: 150pt;
+    text-align: center;
+    line-height: 300pt;
+    z-index: 0;
+  }
+
+  .characteranimatordark{
+    font-family: "Volume Type";
+    transition: font-variation-settings 0.3s ease;
+    animation-name: character-animation;
+    animation-duration: 2.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    color: #2D42FF;
+    font-size: 150pt;
+    text-align: center;
+    line-height: 300pt;
+    z-index: 0;
+  }
+
+  @keyframes fade-out {
+    from {
+      opacity: 100;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+  @keyframes fade-out-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100;
+    }
+  }
+  
+  .opacityfade {
+    animation: fade-out;
+    -webkit-animation: fade-out 1s ease-out;
+    -moz-animation: fade-out 1s ease-out;
+    animation-fill-mode: forwards;
+    z-index: 0;
+  }
+
+  .opacityfadein {
+    animation: fade-out-in;
+    -webkit-animation: fade-out-in 1s ease-out;
+    -moz-animation: fade-out-in 1s ease-out;
+    animation-fill-mode: forwards;
+    z-index: 0;
+  }
+  
+  .sectionillustration{
+    height: 60px;
+    width: 100%;
+    font-family: "Volume Type";
+    position: absolute;
+    left: 50%;
+    
+    /* transition: font-variation-settings 0.3s ease;
+    animation-name: character-animation;
+    animation-duration: 2.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out; */
+    color: #2D42FF;
+    font-size: 150pt;
+    text-align: center;
+    line-height: 300pt;
+    
+  }
+
+  .sectionillustrationstick{
+    height: 300px;
+    width: 100%;
+    position: fixed;
+    left: 50%;
+  
+   
+    top: 10vh;
+    font-family: "Volume Type";
+    transition: font-variation-settings 0.3s ease;
+    animation-name: character-animation;
+    animation-duration: 2.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    color: #2D42FF;
+    font-size: 150pt;
+    text-align: center;
+    line-height: 300pt;
+  }
+
+  .sectionspace{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.columnspace{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  background-color: aquamarine;
+}
+
+#color{
+  background-color: pink;
+}
+
+@-webkit-keyframes background_color_change {
+	from { background-color:  white; }
+	to { background-color: rgb(18, 9, 45); }
+}
+@-moz-keyframes background_color_change {
+	from { background-color:  white; }
+	to { background-color: rgb(18, 9, 45); }
+}
+@-ms-keyframes background_color_change {
+	from { background-color:  white; }
+	to { background-color: rgb(18, 9, 45); }
+}
+@-o-keyframes background_color_change {
+	from { background-color:  white; }
+	to { background-color: rgb(18, 9, 45); }
+}
+@keyframes background_color_change {
+	from { background-color:  white; }
+	to { background-color: rgb(18, 9, 45); }
+}
+
+@-webkit-keyframes type_color_change {
+	from { color: rgb(18, 9, 45); }
+	to { color:  white; }
+}
+@-moz-keyframes type_color_change {
+	from { color: rgb(18, 9, 45); }
+	to { color:  white; }
+}
+@-ms-keyframes type_color_change {
+	from { color: rgb(18, 9, 45); }
+	to { color:  white; }
+}
+@-o-keyframes type_color_change {
+	from { color: rgb(18, 9, 45); }
+	to { color:  white; }
+}
+@keyframes type_color_change {
+	from { color: rgb(18, 9, 45); }
+	to { color:  white; }
+}
+
+.bodydark{
+  transition: background-color 0.3s ease;
+  animation-name: background_color_change;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-out-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+
+.opacityfadeindark{
+  color: #2D42FF;
+  animation: fade-out-in;
+  -webkit-animation: fade-out-in 1s ease-out;
+  -moz-animation: fade-out-in 1s ease-out;
+  animation-fill-mode: forwards;
+}
+
+.opacityfade {
+  animation: fade-out;
+  -webkit-animation: fade-out 1s ease-out;
+  -moz-animation: fade-out 1s ease-out;
+  animation-fill-mode: forwards;
+}
