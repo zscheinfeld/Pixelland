@@ -285,6 +285,7 @@ function myFunction() {
     $( "#parenttextan").removeClass( "opacityfadeindark");
     $( "#parenttextan" ).removeClass( "opacityfadein");
     $("#parenttextan" ).addClass("opacityfade");
+    $( "body" ).addClass( "bodydark");
     $( "#parenttextan").children().removeClass( "characteranimatordark");
     $( "#parenttextan").children().addClass("characterlight");
     $( "#parenttextan").children().removeClass( "characteranimator");
@@ -325,6 +326,7 @@ function myFunction() {
 
   else if ((scrolled > 18930) && (scrolled < 19930)){
     $( "#parenttextan").removeClass( "opacityfadeindark");
+    $( "body" ).addClass( "bodydark");
     $( "#parenttextan" ).removeClass( "opacityfadein");
     $("#parenttextan" ).addClass("opacityfade");
     $( "#parenttextan").children().removeClass( "characteranimatordark");
